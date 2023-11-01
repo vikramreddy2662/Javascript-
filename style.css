@@ -1,0 +1,60 @@
+*{
+       margin:0;
+       padding:0;
+     box-sizing:border-box;
+}
+       
+       
+       
+       
+       body{
+        background-color: rgb(124, 128, 0);
+        font-family:Italian;
+        font-style: bold;
+        font-size:20px;
+       margin: 10px;
+       margin-bottom: 50px;
+       }
+       h1{
+        font-size:20px;
+        background-color: rgb(0, 4, 255);
+      margin:50px;
+      text-align:center;
+      margin-bottom: 50px;
+       }
+       a{
+         background-color: red;     
+       }
+       img{
+              caret-shape: 50px;
+       }
+       p{
+             text-align: center; 
+       }
+
+       .first{
+       background-color:white;
+       text-align:center;
+       }
+       h2{
+              text-align:center;
+       }
+      
+       #your-name{
+              background-color:  rgb(158, 12, 255);
+              border:5px; 
+             
+              width:400px;
+              height:150px;
+              margin:100px;
+              padding:25px
+       }
+       #your-name h3{/*this is the selector*/
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+       }
+       input,button{
+        text-align: center;
+        
+       }
+      
