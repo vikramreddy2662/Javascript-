@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="mybutton">roll</button>
+<label id="value1"></label>
+<label id="value2"></label>
+<label id="value3"></label>
+
+    <script>
+        let a;
+        let b;
+        let c;
+       
+    document.getElementById("mybutton").onclick=function(){
+       /* a=document.getElementById("a").value;
+        a=Number(a);
+        b=document.getElementById("b").value;
+        b=Number(b);
+        c=document.getElementById("c").value;
+        c=Number(c);*/
+        a=Math.random();
+        a=Number(a);
+        b=Math.random();
+        b=Number(b);
+        c=Math.random();
+        c=Number(c);
+        document.getElementById("value1").innerHTML=a;
+        document.getElementById("value2").innerHTML= " ,"+b;
+        document.getElementById("value3").innerHTML=" ,"+c;
+    }
+    </script>
+
+
+</body>
+</html>
