@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <label >Side A</label><br>
+        <input type="text1" id="sidea">
+        <label >Side B </label><br>
+        <input type="text2" id="sideb">
+        <button id="mybutton">submit</button>
+        <label id="mylabel"></label><br>
+
+        
+        
+    <script>
+    document.getElementById("mybutton").onclick=function(){
+    let a=document.getElementById("sidea").value;
+    a=Number(a);
+    let b=document.getElementById("sideb").value;
+    b=Number(b);
+    
+    
+    let c=Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+    document.getElementById("mylabel").innerHTML="side c:"+c;}
+        </script>
+        </body>
+    </html>
