@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Enter a temperature</h1>
+<input type ="text" id="myid"><br>
+<label>celsius</label>
+<input type="radio" id="cbutton">
+<label>Farenheit</label>
+<input type="radio" id="fbutton"><br>
+<button id="mybutton">submit</button>
+<label id="mylabel"></label>
+<script>
+ document.getElementById("mybutton").onclick=function(){
+    let temp=document.getElementById("myid").value;
+    temp=Number(temp);
+    if(document.getElementById("cbutton").checked){
+        temp=(temp-32)*5/9;
+        document.getElementById("mylabel").innerHTML=temp +":C";
+
+    }
+    else if(document.getElementById("fbutton").checked){
+        temp=temp*9/5+32;}
+        document.getElementById("mylabel").innerHTML=temp+":F";
+};
+  </script>
+</body>
+</html>
