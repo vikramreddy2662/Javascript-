@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NUMBER GUESSING GAME</h1>
+    <p>Please guess your Number between 1-10</p>
+    <input type ="text" id="myid">
+    <button  id="mybutton">submit</button>
+    <label  id="mylabel"></label>
+    <script>
+    let answer=Math.floor(Math.random()*10+1);
+    let guess=0;
+    
+    document.getElementById("mybutton").onclick=function(){
+    let value1=document.getElementById("myid").value;
+   
+   if(value1==answer){
+    guess++;
+      alert(`your # is found  ${value} at this ${guess} guesses`);
+   }
+   else if(value1<answer){
+    alert(`your # is too small`);
+   }
+   else if(value1>answer){
+    alert(`your # is too large`);
+   }
+
+}
+    </script>
+</body>
+</html>
