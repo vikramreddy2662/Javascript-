@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let cards=['A',2,9,10,'J','Q',3,5,7,8,4,6,'K'];
+     
+    function shuffle(Array){
+      let currentIndex=Array.length;
+ 
+ while(currentIndex!=0){
+    
+    let randomIndex=Math.floor(Math.random()*Array.length);
+    currentIndex--;
+    let temp=Array[currentIndex];
+    Array[currentIndex]=Array[randomIndex];
+    Array[randomIndex]=temp;
+}
+return Array;
+}
+shuffle(cards);
+cards.forEach(card=>console.log(card));
+//console.log(cards);
+
+
+</script>
+</body>
+</html>
