@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers=[21,22,1,12,45,32,1];
+          
+       /* const descendingOrder= numbers.sort(function(x,y)//fn expression
+       {
+            return y-x;
+        })
+         console.log(descendingOrder);*/
+
+         //using arrow expression
+       numbers.sort((x,y)=>y-x);
+         console.log(numbers);          
+
+
+    </script>
+</body>
+</html>
