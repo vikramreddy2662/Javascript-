@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class ecart{
+     constructor(accName,accPass,accId){
+    this.accName=accName;
+    this.accPass=accName;
+    this.accId=accId;
+}
+shopping(){
+    console.log(`I can shop directly from my home ${accName} ${accPass} ${accId}`);
+}}
+let carts=[new ecart("vikram","vikram@2662",42414),new ecart("bhai","bhai@2332",42414),new ecart("anvesh","rakhi@2662",42414),
+           new ecart("vikas","vikas@2662",42414),new ecart("hemanth","kanki@2552",42414)];
+for(let cart of carts){
+    console.log(cart.accName,cart.accPass,cart.accId);
+}
+//anonymous objects:objects without a name not directly referenced less syntax no need for unique names.
+//carts.forEach(cart=>console.log(`${cart.accName},${cart.accPass},${cart.accId}`));
+//there is no direct access to anonymous objects.
+</script>
+</body>
+</html>
