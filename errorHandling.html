@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ /*error:object with a description of something went wrong*/
+// throw:used to handle generic/userdefined error
+/*try block=>the code along with the errors is written here.
+catch:used to catch and handle errors 
+finally:the code written in this block is always executed without verifying whether the exception  is handled or */
+try{
+    let x=window.prompt("enter the number");
+    x=Number(x);
+   if(isNaN(x)) throw "number  is invalid";
+   else if(x==""){ throw "number is empty";}
+   else
+   console.log(`${x} is your number`);
+}
+   catch(error){
+console.log(error);
+   }
+   
+    finally{
+        console.log("....finally block is executed");
+    }
+      
+
+
+</script>
+</body>
+</html>
