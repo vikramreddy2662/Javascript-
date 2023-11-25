@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Welcome Page</title>
+    
+</head>
+<body>
+    <div id="Sform">
+    <h1>Welcome!</h1>
+    <form id="Student-form">
+    <p>Student details</p>
+    <label>Enter Your FirstName</label>
+    <input type="text" placeholder="yourfirstname" id="Fname">
+    <label>Enter Your LastName</label>
+    <input type="text" placeholder="yourlastname" id="Lname">
+    <label>Enter Your Password</label>
+    <input type ="text" placeholder="yourpass" id="pass"><br>
+   <label>Enter your Date Of Birth</label>
+   <input type="date" placeholder="dd/mm/yyyy" id="dob">
+   <label>Enter Your Email</label>
+   <input type="number" placeholder="mail-id" id="email">
+   <button onclick="AddStudent()">Add Student</button>
+   </form>
+</div>
+
+<div id="Cform">
+
+   <form id="course-form">
+    <p>Course details</p>
+    <label>Enter Course Name</label>
+    <input type="text" placeholder="coursename" id="coursename">
+    <label>Enter Course Duration :</label>
+    <label>FROM</label>
+    <input type="date" placeholder="dd/mm/yyyy" id="startdate">
+    <label>TO</label>
+    <input type="date" placeholder="dd/mm/yyyy" id="enddate">
+    <label>Enter Course Fee</label>
+    <input type="number" placeholder=coursefee id="coursefee">
+    <button onclick="AddCourse()">Add Course</button>
+    </form>
+
+    </div>
+   
+<script>
+    function AddStudent(){
+        var fname=document.getElementById("Fname").value;
+        var lname=document.getElementById("Lname").value;
+        var pass=document.getElementById("pass").value;
+        var dob=document.getElementById("dob").value;
+        var mail=document.getElementById("email").value;
+
+        alert("student details added successfully");
+    }
+
+    function AddCourse(){
+        var Cname=document.getElementById("coursename").value;
+        var Sdate=document.getElementById("startdate").value;
+        var Edate=document.getElementById("enddate").value;
+        var num=document.getElementById("coursefee").value;
+
+        alert("course details added successfully");
+
+    }
+  
+
+</script>
+
+</body>
+</html>
